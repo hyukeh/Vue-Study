@@ -1,13 +1,19 @@
 <template>
-	<div></div>
+	<div>
+		<input type="text" v-model="text" />
+	</div>
 </template>
 
 <script>
 export default {
 	data() {
-		return {};
+		return {
+			text: 'Korea',
+		};
 	},
-	methods: {},
+	methods: {
+		setCount() {},
+	},
 };
 </script>
 
