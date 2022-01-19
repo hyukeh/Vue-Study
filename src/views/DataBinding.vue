@@ -1,6 +1,9 @@
 <template>
 	<div>
-		<input type="text" v-model="text" />
+		<lable
+			><input type="checkbox" v-model="text" @click="getData" />
+			{{ text }}
+		</lable>
 	</div>
 </template>
 
@@ -8,11 +11,13 @@
 export default {
 	data() {
 		return {
-			text: 'Korea',
+			text: true,
 		};
 	},
 	methods: {
-		setCount() {},
+		getData() {
+			alert(this.text);
+		},
 	},
 };
 </script>
