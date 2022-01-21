@@ -1,22 +1,28 @@
 <template>
-	<div>
-		<lable
-			><input type="checkbox" v-model="text" @click="getData" />
-			{{ text }}
-		</lable>
-	</div>
+	<h1>full Name : {{ fullName }}</h1>
+	<button type="button" @click="changeName">변경</button>
 </template>
 
 <script>
 export default {
 	data() {
 		return {
-			text: true,
+			firstName: 'Seungwon',
+			lastName: 'Go',
+			fullName: '',
 		};
 	},
+	watch: {
+		firstName() {
+			this.fullName = this.firstName + '' + this.lastName;
+		},
+		lastName() {
+			this.fullName = this.firstName + '' + this.lastName;
+		},
+	},
 	methods: {
-		getData() {
-			alert(this.text);
+		changeName() {
+			this.fullName = 'Eunsol';
 		},
 	},
 };
