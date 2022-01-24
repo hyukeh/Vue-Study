@@ -2,7 +2,8 @@
 	<div id="nav">
 		<router-link to="/">Home</router-link> |
 		<!-- <router-link to="/about">About</router-link> | -->
-		<router-link to="/databinding">DataBinding</router-link>
+		<router-link to="/databinding">DataBinding</router-link> |
+		<router-link to="/databindinglist">DataBindinglist</router-link>
 	</div>
 	<router-view />
 </template>
