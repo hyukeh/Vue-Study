@@ -3,6 +3,8 @@ import Home from '../views/Home.vue';
 import DataBindingList from '../views/DataBindingList';
 import Nested from '../views/NestedComponent';
 import Component from '../views/ParentComponent';
+import Calculator from '../views/Calculator';
+import Compositionapi from '../views/CompositionAPI';
 
 const routes = [
 	{
@@ -31,8 +33,18 @@ const routes = [
 	},
 	{
 		path: '/component',
-		name: '/Component',
+		name: 'Component',
 		component: Component,
+	},
+	{
+		path: '/calculator',
+		name: 'Calculator',
+		component: Calculator,
+	},
+	{
+		path: '/compositionapi',
+		name: 'CompositionAPI',
+		component: Compositionapi,
 	},
 ];
 
