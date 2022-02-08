@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
-import DataBinding from '../views/DataBinding';
 import DataBindingList from '../views/DataBindingList';
 import Nested from '../views/NestedComponent';
 import Component from '../views/ParentComponent';
@@ -19,11 +18,6 @@ const routes = [
 		// which is lazy-loaded when the route is visited.
 		component: () =>
 			import(/* webpackChunkName: "about" */ '../views/About.vue'),
-	},
-	{
-		path: '/databinding',
-		name: 'DataBinding',
-		component: DataBinding,
 	},
 	{
 		path: '/databindinglist',
